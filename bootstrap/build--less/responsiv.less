@@ -1,0 +1,100 @@
+@media (min-width: 360px){
+	.txt-box{
+		min-width: 100%%;
+	}
+}
+
+@media (min-width: 480px){
+	.txt-box{
+		min-width: 100%%;
+	}
+}
+
+@media (min-width: 768px){
+
+	
+	.navbar > .container-fluid{
+		.pl0;
+		.pr0;
+		.ml0;
+		.mr0;
+	}
+	.navbar-collapse{
+		.pl0;
+		.pr0;
+	}
+	//background-color navbar
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+		background-color: transparent;
+	}
+	//active
+	.navbar-default .navbar-nav>.active>a{
+	font-weight: @w100;
+	font-size: @10;
+	}
+	
+	.navbar-default .navbar-collapse{
+		background-color: transparent;
+	}
+
+	//navbar blue
+	.navbar-nav{
+		background-color: @nav-bg;
+		display: flex;
+		align-items: center;
+		font-size: @10;
+		font-weight: @w100;
+		text-transform: uppercase;
+		min-width: 100%;
+		.pl0;
+		.pr0;
+		.ml0;
+		.mr0;
+	}
+	.navbar-default .navbar-nav{
+		li{
+			position:relative;
+
+			a{
+				margin-left: @05;
+			}
+		}
+		//first backslash
+		li:nth-child(1)::before{
+			content: "";
+		}
+		//backslash navigation
+		li:before{
+			content: "\002F";
+			font-size: @15;
+			font-weight: 100;
+			color: white;
+			position: absolute;
+			top: 20%;
+		}
+	}
+	.navbar-default .navbar-nav>li>a{
+		color: white;
+		.letspace;
+		min-width: 100%;
+	}
+	.txt-box{
+	position: relative;
+	min-width: 60%;
+	z-index: 1;
+	.color-box{
+		background-color: @nav-bg-light;
+		opacity: 0.8;
+		position: absolute;
+		top: 30%;
+		left: 40%;
+		.head-start{
+			font-size: @10 *1.4;
+			font-weight: @w700;
+			padding: 0 1em;
+			color: black;
+			}
+		}
+	}
+
+}
