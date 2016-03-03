@@ -21,6 +21,31 @@
 .m0a {
   margin: 0 auto;
 }
+.pic-description {
+  position: relative;
+}
+.pic-description img {
+  min-width: 100%;
+  height: auto;
+}
+.pic-description .signature-box {
+  position: absolute;
+  top: 5em;
+}
+.pic-description .signature-box .title-box {
+  background-color: white;
+  opacity: 0.8;
+  padding: 0.5em 0.5em;
+}
+.pic-description .signature-box .title-box .head-title {
+  font-size: 1.2em;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.pic-description .signature-box .title-box .sub-title {
+  font-size: 1em;
+}
 * {
   padding: 0;
   margin: 0;
@@ -38,6 +63,9 @@ h6 {
   margin-right: 0;
   margin-top: 0;
   margin-bottom: 0;
+}
+p {
+  margin: 0;
 }
 .col-sm-12,
 .col-xs-12 h1 {
@@ -171,6 +199,32 @@ body {
 .footer-bg {
   background-color: #1251b0;
 }
+.gallery {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.gallery picture {
+  width: 200px;
+  margin: 0.5vw;
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+.test {
+  color: black;
+  font-size: 2em;
+  height: 4em;
+}
+.big-picture {
+  padding: 0 0.5vw;
+}
+.big-picture .pic-desription img {
+  min-width: 100%;
+  height: auto;
+}
 @media (min-width: 360px) {
   .txt-box {
     min-width: 100%%;
@@ -253,8 +307,8 @@ body {
   }
   .startside .color-box {
     position: absolute;
-    top: 45%;
-    left: 26.5em;
+    top: 14%;
+    left: 6em;
     width: 27em;
   }
   .startside .color-box .head-start {
@@ -293,6 +347,12 @@ body {
     top: 45%;
     left: 42.3em;
     width: 27em;
+  }
+  @-moz-document url-prefix() {
+    .startside .color-box {
+      position: absolute;
+      top: 17.5em;
+    }
   }
 }
 @media (min-width: 1200px) {
