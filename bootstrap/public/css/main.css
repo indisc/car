@@ -26,6 +26,19 @@
   margin: 0;
   box-sizing: border-box;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .col-sm-12,
 .col-xs-12 h1 {
   padding: 0;
@@ -94,6 +107,7 @@ body {
 .navbar-default .navbar-nav > .active > a:hover {
   font-weight: 500;
   background-color: transparent;
+  color: white;
 }
 .navbar-default .navbar-toggle:focus,
 .navbar-default .navbar-toggle:hover {
@@ -140,90 +154,22 @@ body {
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-.footer-bg {
-  background-color: #1251b0;
-}
 .startside img {
-  max-width: 100%;
+  min-width: 100%;
   height: auto;
 }
-.color-box {
-  position: relative;
-  background-color: #c8dbf9;
+.mobile-content {
+  max-width: 90%;
+  margin: 0 auto;
 }
-.color-box .txt-start {
+.mobile-content .mobile-head {
   font-size: 2em;
-  color: white;
-  position: absolute;
-  top: 50%;
-}
-/*
-
-
-.hvr-shutter-out-horizontal {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  position: relative;
-  background: #1251b0;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-}
-.hvr-shutter-out-horizontal:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: white;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transform-origin: 50%;
-  transform-origin: 50%;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-.hvr-shutter-out-horizontal:hover, .hvr-shutter-out-horizontal:focus, .hvr-shutter-out-horizontal:active {
-	transition: 800ms;
-	color: @nav-bg;
-	font-size: 1.2em;
-	font-weight: 500;
-}
-.hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
-*/
-.txt-box {
-  position: relative;
-  min-width: 60%;
-  z-index: 1;
-}
-.txt-box .color-box {
-  background-color: #c8dbf9;
-  opacity: 0.8;
-  position: absolute;
-  top: 30%;
-  left: 40%;
-}
-.txt-box .color-box .head-start {
-  font-size: 1.4em;
   font-weight: 700;
-  padding: 0 1em;
-  color: black;
+  letter-spacing: 0.03em;
+  color: #fb8c47;
+}
+.footer-bg {
+  background-color: #1251b0;
 }
 @media (min-width: 360px) {
   .txt-box {
@@ -298,23 +244,66 @@ body {
     letter-spacing: 0.03em;
     min-width: 100%;
   }
-  .txt-box {
+  .startside {
     position: relative;
-    min-width: 60%;
-    z-index: 1;
   }
-  .txt-box .color-box {
-    background-color: #c8dbf9;
-    opacity: 0.8;
+  .startside img {
+    min-width: 100%;
+    height: auto;
+  }
+  .startside .color-box {
     position: absolute;
-    top: 30%;
-    left: 40%;
+    top: 45%;
+    left: 26.5em;
+    width: 27em;
   }
-  .txt-box .color-box .head-start {
-    font-size: 1.4em;
-    font-weight: 700;
-    padding: 0 1em;
-    color: black;
+  .startside .color-box .head-start {
+    color: white;
+    background-color: #1251b0;
+    opacity: 0.9;
+    padding-right: 1em;
+  }
+  .startside .color-box .headline {
+    font-size: 1.5em;
+    font-weight: 500;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-align: right;
+  }
+  .startside .color-box .float-txt {
+    text-align: right;
+    font-size: 1em;
+    font-weight: 100;
+    line-height: 2.8ex;
+    padding-bottom: 1em;
+  }
+  @-moz-document url-prefix() {
+    .startside .color-box {
+      position: absolute;
+      top: 17.5em;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .startside {
+    position: relative;
+  }
+  .startside .color-box {
+    position: absolute;
+    top: 45%;
+    left: 42.3em;
+    width: 27em;
+  }
+}
+@media (min-width: 1200px) {
+  .startside {
+    position: relative;
+  }
+  .startside .color-box {
+    position: absolute;
+    top: 45%;
+    left: 56.6em;
+    width: 27em;
   }
 }
 .bg-logo {
