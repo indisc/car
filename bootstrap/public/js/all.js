@@ -1,2 +1,2 @@
-$(document).ready(function(){$(".navbar-toggle").on("click",function(){$(this).toggleClass("active")})}),$(document).ready(function(){$("picture img").click(function(){var t=$(this).attr("src"),e=$(this).attr("h1"),i=$(this).attr("p");$("#bigPic").attr({src:t,h1:e,p:i})})});
+$(document).ready(function(){$(".navbar-toggle").on("click",function(){$(this).toggleClass("active")})}),$(document).ready(function(){$("picture img").click(function(){var t=$(this).attr("src");$("#bigPic").attr({src:t})})});
 //# sourceMappingURL=all.js.map
