@@ -1,2 +1,2 @@
-$(document).ready(function(){$(".navbar-toggle").on("click",function(){$(this).toggleClass("active")})}),$(document).ready(function(){$("picture img").click(function(){var t=$(this).attr("src");$("#bigPic").attr({src:t})})});
+$(document).ready(function(){$(".navbar-toggle").on("click",function(){$(this).toggleClass("active")})}),$(document).ready(function(){$("picture img").click(function(){var t=$(this).attr("src"),e=$(this).parent().find("section .head-title").text(),i=$(this).parent().find("section .sub-title").text();$("#bigPic").attr({src:t}),$("#Htitle").text(e),$("#Stitle").text(i)})});
 //# sourceMappingURL=all.js.map

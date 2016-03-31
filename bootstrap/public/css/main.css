@@ -225,6 +225,31 @@ body {
   min-width: 100%;
   height: auto;
 }
+.big-picture {
+  position: relative;
+}
+.big-picture img {
+  max-width: 100%;
+  height: auto;
+}
+.big-picture #sig-box {
+  position: absolute;
+  top: 5em;
+}
+.big-picture #sig-box .title-box {
+  background-color: white;
+  opacity: 0.8;
+  padding: 0.5em 0.5em;
+}
+.big-picture #sig-box .title-box .head-title {
+  font-size: 1.2em;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.big-picture #sig-box .title-box .sub-title {
+  font-size: 1em;
+}
 @media (min-width: 360px) {
   .txt-box {
     min-width: 100%%;

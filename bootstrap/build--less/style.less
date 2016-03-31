@@ -86,7 +86,7 @@ body{
 	transition: 800ms;
 	color: white;
 	font-size: 1.2em;
-	font-weight: 500
+	font-weight: 500;
 }
 
 .navbar-default .navbar-nav>.active>a{
@@ -194,6 +194,10 @@ body{
 	height: 4em;
 }
 
+// .picture-element{
+// 	min-width: 80%;
+// }
+
 .big-picture{
 	padding: 0 0.5vw;
 	.pic-desription{
@@ -203,8 +207,36 @@ body{
 		}
 	}
 }
+.big-picture{
+	position: relative;
+	
+		img{
+		max-width: 100%;
+		height: auto;
+	}
+	#sig-box{
+		position: absolute;
+		top: @10 * 5;
 
-
+		.title-box{
+			background-color: white;
+			opacity: 0.8;
+			padding: @05 @05;	
+		
+			.head-title{
+				font-size: @10 + 0.2;
+				color: black;
+				text-transform: uppercase;
+				.letspace;
+				}
+		
+			.sub-title{
+				font-size: @10;
+				}
+		}
+	
+	}
+}
 
 
 
